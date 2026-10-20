@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Seed</title>
+<meta property="og:title" content="The Seed · Para Pool Biz"><meta property="og:description" content="Sealed until Bitcoin block 972,751, then it draws itself from that block's hash. Find your favourite outcome."><meta property="og:image" content="https://m4lt23.github.io/parapoolbiz-theseed/preview.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://m4lt23.github.io/parapoolbiz-theseed/preview.png">
+
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=IBM+Plex+Mono:wght@400;600&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
@@ -473,7 +475,7 @@ document.getElementById('dlImg').onclick=async()=>{
 function postText(){
   if(sealed)return `The Seed by Para Pool Biz is sealed until Bitcoin block ${fmt(height())}. Then it draws itself from that block's hash, the same hash that picks the Omega raffle winner.\n\nSee what it could become:`;
   const t=decode(current);
-  return `This is my favourite possible outcome of The Seed by Para Pool Biz 🦠\n${t.palette.name} · ${t.bg.name} · ${t.parasite.name}\n\nIt stays sealed until Bitcoin block ${fmt(height())}, then draws itself from that block's hash. Find your favourite:`;
+  return `This is my favourite possible outcome of The Seed by Para Pool Biz 🦠\n\nIt stays sealed until Bitcoin block ${fmt(height())}, then draws itself from that block's hash. Find your favourite:`;
 }
 function pageUrl(){return location.href.split('#')[0].split('?')[0]}
 function canShareFiles(){try{return !!(navigator.canShare&&navigator.canShare({files:[new File([new Blob(['x'],{type:'image/png'})],'t.png',{type:'image/png'})]}))}catch(e){return false}}
