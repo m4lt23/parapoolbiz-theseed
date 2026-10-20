@@ -473,7 +473,7 @@ document.getElementById('dlImg').onclick=async()=>{
 function postText(){
   if(sealed)return `The Seed by Para Pool Biz is sealed until Bitcoin block ${fmt(height())}. Then it draws itself from that block's hash, the same hash that picks the Omega raffle winner.\n\nSee what it could become:`;
   const t=decode(current);
-  return `This is my favourite possible outcome of The Seed by Para Pool Biz 🌱\n${t.palette.name} · ${t.bg.name} · ${t.parasite.name}\n\nIt stays sealed until Bitcoin block ${fmt(height())}, then draws itself from that block's hash. Find your favourite:`;
+  return `This is my favourite possible outcome of The Seed by Para Pool Biz 🦠\n${t.palette.name} · ${t.bg.name} · ${t.parasite.name}\n\nIt stays sealed until Bitcoin block ${fmt(height())}, then draws itself from that block's hash. Find your favourite:`;
 }
 function pageUrl(){return location.href.split('#')[0].split('?')[0]}
 function canShareFiles(){try{return !!(navigator.canShare&&navigator.canShare({files:[new File([new Blob(['x'],{type:'image/png'})],'t.png',{type:'image/png'})]}))}catch(e){return false}}
